@@ -11,6 +11,7 @@ class ViewController: UIViewController {
         deleteData()
         getData()
     }
+    
     // Create
     func saveData(){
         guard let context = self.persistentContainer?.viewContext else { return }
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
         
         try? context.save()
     }
+    
     // Read
     func getData(){
         guard let context = self.persistentContainer?.viewContext else { return }
@@ -31,6 +33,7 @@ class ViewController: UIViewController {
         
         print(cars)
     }
+    
     // Update
     func updateData(){
         guard let context = self.persistentContainer?.viewContext else { return }
@@ -45,6 +48,7 @@ class ViewController: UIViewController {
         }
         try? context.save()
     }
+    
     // Delete
     func deleteData(){
         guard let context = self.persistentContainer?.viewContext else { return }
@@ -57,7 +61,6 @@ class ViewController: UIViewController {
         for car in filteredCars{
             context.delete(car)
         }
-        
         try? context.save()
 
         
