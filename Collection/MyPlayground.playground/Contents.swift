@@ -54,3 +54,53 @@ rawPhone.1
 
 // enum
 
+enum WeekDay: String {
+    case mon = "Monday"
+    case tue
+    case wed
+    case thu
+    case fri
+}
+
+var today: WeekDay = .mon
+today.rawValue
+var today2 = WeekDay.tue
+
+enum MediaType {
+    case audio
+    case video
+}
+
+var mediaType: MediaType = .audio
+
+enum MediaType2 {
+    case audio(String)
+    case video(String)
+}
+
+var mp3: MediaType2 = .audio("mp3")
+var h264: MediaType2 = .video("h264")
+
+enum MasterLevel: Int {
+    case beginner
+    case intermediate
+    case professional
+}
+
+var beginner: MasterLevel = .beginner
+beginner.rawValue
+
+let pro = MasterLevel(rawValue: 2)
+let otherLevel = MasterLevel(rawValue: 9)
+
+enum Direction: String {
+    case up
+    case down = "ddd"
+    case leftRight = "left_right"
+}
+
+let dir: Direction = .down
+dir.rawValue
+
+let up = Direction(rawValue: "up")
+let otherDirection = Direction(rawValue: "left")
