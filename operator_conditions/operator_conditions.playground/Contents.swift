@@ -51,3 +51,55 @@ score1 >= score2
 
 score1 < score2
 score1 <= score2
+
+
+let num1 = 13
+let num2 = 6
+
+let sum1 = num1 + num2
+
+if sum1 > 10{
+    print("over 10")
+} else {
+    print("not over 10")
+}
+
+let age1 = 14
+let age2 = 25
+
+if age1 > 19 && age2 > 19 {
+    print("over 19 age")
+} else {
+    print("not over")
+}
+
+if age1 > 20 || age2 > 20 {
+    print("can")
+}
+
+
+let age3 = 30
+let age4 = 40
+
+let text = age3 == age4 ? "same" : "not same"
+
+
+enum Direction {
+    case up
+    case down
+    case left
+    case right
+}
+
+let direction = Direction.down
+
+switch direction {
+case .up:
+    print("up")
+case .down:
+    print("down")
+case .left:
+    print("left")
+case .right:
+    print("right")
+}
