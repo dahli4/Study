@@ -37,3 +37,15 @@ func printName(_ name: String) {
 }
 
 printName("Jason")
+
+
+// default parameter
+func discount(price: Double, ratio: Double = 0.2) -> Double {
+    return price * (1 - ratio)
+}
+
+let defaultRatioApplied = discount(price: 2000)
+print(defaultRatioApplied)
+
+let customRatioApplied = discount(price: 2000, ratio: 0.5)
+print(customRatioApplied)
