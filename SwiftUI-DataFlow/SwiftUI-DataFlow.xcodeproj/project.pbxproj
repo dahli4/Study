@@ -13,6 +13,8 @@
 		1A845FE82C469AAF00DDECD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A845FE72C469AAF00DDECD1 /* Preview Assets.xcassets */; };
 		1A845FEF2C469B5F00DDECD1 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A845FEE2C469B5F00DDECD1 /* PlayerView.swift */; };
 		1A845FF12C469B6900DDECD1 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A845FF02C469B6900DDECD1 /* Episode.swift */; };
+		1A8B5D282C4957EB005B8DEB /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B5D272C4957EB005B8DEB /* PlayButton.swift */; };
+		1A8B5D2A2C495815005B8DEB /* PlayStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B5D292C495815005B8DEB /* PlayStatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		1A845FE72C469AAF00DDECD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A845FEE2C469B5F00DDECD1 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		1A845FF02C469B6900DDECD1 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		1A8B5D272C4957EB005B8DEB /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		1A8B5D292C495815005B8DEB /* PlayStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				1A845FE22C469AAD00DDECD1 /* ContentView.swift */,
 				1A845FF02C469B6900DDECD1 /* Episode.swift */,
 				1A845FEE2C469B5F00DDECD1 /* PlayerView.swift */,
+				1A8B5D292C495815005B8DEB /* PlayStatusView.swift */,
+				1A8B5D272C4957EB005B8DEB /* PlayButton.swift */,
 				1A845FE42C469AAF00DDECD1 /* Assets.xcassets */,
 				1A845FE62C469AAF00DDECD1 /* Preview Content */,
 			);
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8B5D2A2C495815005B8DEB /* PlayStatusView.swift in Sources */,
 				1A845FEF2C469B5F00DDECD1 /* PlayerView.swift in Sources */,
+				1A8B5D282C4957EB005B8DEB /* PlayButton.swift in Sources */,
 				1A845FF12C469B6900DDECD1 /* Episode.swift in Sources */,
 				1A845FE32C469AAD00DDECD1 /* ContentView.swift in Sources */,
 				1A845FE12C469AAD00DDECD1 /* SwiftUI_DataFlowApp.swift in Sources */,
