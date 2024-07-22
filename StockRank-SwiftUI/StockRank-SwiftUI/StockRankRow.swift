@@ -38,6 +38,7 @@ struct StockRankRow: View {
 						.foregroundStyle(stock.diff > 0 ? .red : .blue)
 				}
 			}
+			
 			Spacer()
 			
 			Image(systemName: "heart.fill")
@@ -48,7 +49,7 @@ struct StockRankRow: View {
 				.foregroundStyle(.gray)
 		}
 		.padding()
-		.frame(maxWidth: .infinity)
+		.frame(maxWidth: .infinity, maxHeight: .infinity)
 		.background(.black)
 	}
 }

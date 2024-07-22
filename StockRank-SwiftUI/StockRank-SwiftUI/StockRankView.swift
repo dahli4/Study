@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct StockRankView: View {
+	
+	@State var list = StockModel.list
+	
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+		
+		List(list, id: \.self) { list in
+			StockRankRow(stock: list)
+				.listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))	// 인셋도 줄여주자
+				.listRowSeparator(.hidden)
+				.frame(height: 80)
+		}
+		.listStyle(.plain)	// 디자인을 커스텀하자
+		.background(.black)
+	}
 }
 
 #Preview {
