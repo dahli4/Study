@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct StockModel: Hashable {
+struct StockModel: Hashable, Identifiable {		//Identifiable 프로토콜 준수하여 id 생략 가능. 대신 id값을 여기에 적어줘야함.
+	var id: String {
+		return name
+	}
 	let rank: Int
 	let imageName: String
 	let name: String
