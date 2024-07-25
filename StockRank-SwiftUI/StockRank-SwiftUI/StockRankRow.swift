@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StockRankRow: View {
 	
-	var stock: StockModel
+	@Binding var stock: StockModel
 	
     var body: some View {
 		HStack {
@@ -54,6 +54,6 @@ struct StockRankRow: View {
 	}
 }
 
-#Preview {
-	StockRankRow(stock: StockModel.list[0])
+#Preview(traits: .fixedLayout(width: 390, height: 80)) {
+	StockRankRow(stock: .constant(StockModel.list[2]))
 }

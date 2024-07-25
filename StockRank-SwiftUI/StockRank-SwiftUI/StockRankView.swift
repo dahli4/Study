@@ -13,7 +13,7 @@ struct StockRankView: View {
 	
     var body: some View {
 		
-		List(list) { list in
+		List($list) { list in
 			StockRankRow(stock: list)
 				.listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))	// 인셋도 줄여주자
 				.listRowSeparator(.hidden)

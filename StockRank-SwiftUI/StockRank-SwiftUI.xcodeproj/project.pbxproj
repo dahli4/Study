@@ -13,6 +13,7 @@
 		1A8B5D642C4EAAC5005B8DEB /* StockRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B5D632C4EAAC5005B8DEB /* StockRankView.swift */; };
 		1A8B5D662C4EAAD0005B8DEB /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B5D652C4EAAD0005B8DEB /* StockModel.swift */; };
 		1A8B5D682C4EAB79005B8DEB /* StockRankRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B5D672C4EAB79005B8DEB /* StockRankRow.swift */; };
+		1A8B5D882C52A96F005B8DEB /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B5D872C52A96F005B8DEB /* StockDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		1A8B5D632C4EAAC5005B8DEB /* StockRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankView.swift; sourceTree = "<group>"; };
 		1A8B5D652C4EAAD0005B8DEB /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		1A8B5D672C4EAB79005B8DEB /* StockRankRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankRow.swift; sourceTree = "<group>"; };
+		1A8B5D872C52A96F005B8DEB /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				1A8B5D552C4EAAA8005B8DEB /* StockRank_SwiftUIApp.swift */,
 				1A8B5D632C4EAAC5005B8DEB /* StockRankView.swift */,
 				1A8B5D672C4EAB79005B8DEB /* StockRankRow.swift */,
+				1A8B5D872C52A96F005B8DEB /* StockDetailView.swift */,
 				1A8B5D652C4EAAD0005B8DEB /* StockModel.swift */,
 				1A8B5D592C4EAAAA005B8DEB /* Assets.xcassets */,
 				1A8B5D5B2C4EAAAA005B8DEB /* Preview Content */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A8B5D662C4EAAD0005B8DEB /* StockModel.swift in Sources */,
+				1A8B5D882C52A96F005B8DEB /* StockDetailView.swift in Sources */,
 				1A8B5D682C4EAB79005B8DEB /* StockRankRow.swift in Sources */,
 				1A8B5D642C4EAAC5005B8DEB /* StockRankView.swift in Sources */,
 				1A8B5D562C4EAAA8005B8DEB /* StockRank_SwiftUIApp.swift in Sources */,
