@@ -11,19 +11,28 @@ struct StockRankView: View {
 	
 	@State var list = StockModel.list
 	
-    var body: some View {
-		
-		List($list) { list in
-			StockRankRow(stock: list)
-				.listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))	// 인셋도 줄여주자
-				.listRowSeparator(.hidden)
+	var body: some View {
+		NavigationStack {
+			
+			List($list) { $item in
+				ZStack {
+					NavigationLink {
+						StockDetailView(stock: $item)
+					} label: {
+						EmptyView()
+					}
+					StockRankRow(stock: $item)
+				}
+				.listRowInsets(EdgeInsets())
 				.frame(height: 80)
+			}
+			.listStyle(.plain)	// 디자인을 커스텀하자
+			.navigationTitle("Stock Rank")
 		}
-		.listStyle(.plain)	// 디자인을 커스텀하자
-		.background(.black)
 	}
 }
 
 #Preview {
-    StockRankView()
+	StockRankView()
+		.preferredColorScheme(.dark)
 }
