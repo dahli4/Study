@@ -46,7 +46,7 @@ struct StockRankRow: View {
 				.resizable()
 				.aspectRatio(contentMode: .fit)
 				.frame(width: 40, height: 40)
-				.foregroundStyle(.gray)
+				.foregroundStyle(Color(stock.isFavorites ? .red : .gray))
 		}
 		.padding()
 		.frame(maxWidth: .infinity, maxHeight: .infinity)
