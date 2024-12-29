@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct FrameworkListView: View {
-	@State var list: [AppleFramework] = AppleFramework.list
+	@StateObject var vm = FrameworkListViewModel()
 	
 	let layout: [GridItem] = [
 		GridItem(.flexible()),
 		GridItem(.flexible()),
 		GridItem(.flexible()),
 	]
+	
 	// Grid 만들기
 	// UIKit - UICollectionView
 	// 	- Data, Presentation, Layout
@@ -26,8 +27,8 @@ struct FrameworkListView: View {
 		NavigationStack {
 			ScrollView {
 				LazyVGrid(columns: layout) {
-					ForEach(list) { list in
-						FrameworkCell(framework: list)
+					ForEach(vm.models) { $list in
+						FrameworkCell(framework: $list)
 					}
 				}
 				.padding([.top ,.leading, .trailing], 16.0)

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct FrameworkCell: View {
-	var framework: AppleFramework
+	@Binding var framework: AppleFramework
+	
     var body: some View {
 		VStack {
 			Image(framework.imageName)
@@ -24,5 +25,5 @@ struct FrameworkCell: View {
 }
 
 #Preview(traits: .fixedLayout(width: 160, height: 250)) {
-	FrameworkCell(framework: AppleFramework.list[0])
+	FrameworkCell(framework: .constant(AppleFramework.list[1]))
 }
